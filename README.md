@@ -13,3 +13,6 @@ Sample .NET console app to get a access token by suplying your credentials. Hand
 
 ## PythonSamples
 WIP. Sample Python code for handy shortcuts or something. Should grow and expand into a library of sorts. *A reference is WIP too!*
+
+## DevOps
+WIP. Some scripts and resources for DevOps, i.e. packaging, exporting, importing solutions to deploy and migrate between environments.
