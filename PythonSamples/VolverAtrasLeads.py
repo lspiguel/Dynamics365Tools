@@ -4,7 +4,7 @@ import json
 from urllib.parse import urlparse, parse_qs
 from dynamics365crm.client import Client
 
-import GetD365Token
+import dynamics365ce_helpers
 
 def UserSaidYes(text):
 	while True:
@@ -18,10 +18,10 @@ def UserSaidYes(text):
 
 resource = input("Dynamics 365 URL? ")
 
-token = GetD365Token.GetInteractiveToken(resource)
+token = dynamics365ce_helpers.GetInteractiveToken(resource)
 
 client = Client(resource, token=token)
-fullname = 'El Proceso Completo SA'
+fullname = input("fullname?")
 
 while True:
     if UserSaidYes("Update?"):

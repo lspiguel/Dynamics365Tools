@@ -5,7 +5,7 @@
     <ProjectGuid>a5192ea1-06d0-46df-9d0c-57ea091c3d65</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>privileges.py</StartupFile>
+    <StartupFile>RespuestaSAP.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,7 +25,7 @@
     <Compile Include="dynamics365ce_helpers.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Leads.py">
+    <Compile Include="VolverAtrasLeads.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="privileges.py">
@@ -35,6 +35,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="List.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RespuestaSAP.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="volverAtrasSMSV.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
