@@ -38,8 +38,8 @@ namespace GetD365Token
 
                 AuthenticationContext authContext =
                 new AuthenticationContext("https://login.microsoftonline.com/common", false);
-                UserCredential credential = new UserCredential(userName, password);
-                AuthenticationResult result = authContext.AcquireToken(serviceUrl, clientId, credential);
+                UserPasswordCredential credential = new UserPasswordCredential(userName, password);
+                AuthenticationResult result = authContext.AcquireTokenAsync(serviceUrl, clientId, credential).GetAwaiter().GetResult();
                 //The access token
                 string accessToken = result.AccessToken;
 
